@@ -15,5 +15,6 @@ if compgen -G "${SOURCE_FOLDER}/FileZilla*.tar" > /dev/null; then
 fi
 
 if [ -d "${SOURCE_FOLDER}/FileZilla.app" ]; then
+    rm -rf ${DEST_FOLDER}/FileZilla.app
     mv ${SOURCE_FOLDER}/FileZilla.app ${DEST_FOLDER}/FileZilla.app
 fi
